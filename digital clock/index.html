@@ -20,7 +20,7 @@
     <div id="DateDisplay" class="date"></div>
 
     <script>
-      const showTime = () => {
+      function showTime() {
         let currentTime = new Date();
         let hours = currentTime.getHours();
         let minutes = currentTime.getMinutes();
@@ -37,67 +37,9 @@
         document.getElementById("ClockDisplay").textContent = time;
 
         setTimeout(showTime, 1000); //async funtion
-      };
+      }
 
       showTime();
-
-      const showCurrentDate = () => {
-        let date = new Date();
-        let dayOfTheWeek = date.getDay();
-        let day = date.getDate();
-        let month = date.getMonth();
-        let year = date.getFullYear();
-        // Assigning days of the week
-        dayOfTheWeek == 1
-          ? (dayOfTheWeek = "Monday")
-          : dayOfTheWeek == 2
-          ? (dayOfTheWeek = "Tuesday")
-          : dayOfTheWeek == 3
-          ? (dayOfTheWeek = "Wednesday")
-          : dayOfTheWeek == 4
-          ? (dayOfTheWeek = "Thursday")
-          : dayOfTheWeek == 5
-          ? (dayOfTheWeek = "Friday")
-          : dayOfTheWeek == 6
-          ? (dayOfTheWeek = "Saturday")
-          : dayOfTheWeek == 7
-          ? (dayOfTheWeek = "Sunday")
-          : dayOfTheWeek;
-
-        // Asigning months of the year
-        month == 0
-          ? (month = "January")
-          : month == 1
-          ? (month = "February")
-          : month == 2
-          ? (month = "March")
-          : month == 3
-          ? (month = "April")
-          : month == 4
-          ? (month = "May")
-          : month == 5
-          ? (month = "June")
-          : month == 6
-          ? (month = "July")
-          : month == 7
-          ? (month = "August")
-          : month == 8
-          ? (month = "September")
-          : month == 9
-          ? (month = "October")
-          : month == 10
-          ? (month = "November")
-          : month == 11
-          ? (month = "December")
-          : month;
-
-        let currentDate = dayOfTheWeek + " " + day + " " + month + " " + year;
-
-        document.getElementById("DateDisplay").innerText = currentDate;
-        document.getElementById("DateDisplay").textContent = currentDate;
-      };
-
-      showCurrentDate();
     </script>
   </body>
 </html>
