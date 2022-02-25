@@ -18,5 +18,28 @@
     <div id="ClockDisplay" class="clock"></div>
 
     <div id="DateDisplay" class="date"></div>
+
+    <script>
+      function showTime() {
+        let currentTime = new Date();
+        let hours = currentTime.getHours();
+        let minutes = currentTime.getMinutes();
+        let seconds = currentTime.getSeconds();
+        let session = "AM";
+
+        hours >= 12 ? (session = "PM") : session;
+        hours < 10 ? (hours = "0" + hours) : hours;
+        minutes < 10 ? (minutes = "0" + minutes) : minutes;
+        seconds < 10 ? (seconds = "0" + seconds) : seconds;
+
+        let time = hours + ":" + minutes + ":" + seconds + " " + session;
+        document.getElementById("ClockDisplay").innerText = time;
+        document.getElementById("ClockDisplay").textContent = time;
+
+        setTimeout(showTime, 1000); //async funtion
+      }
+
+      showTime();
+    </script>
   </body>
 </html>
