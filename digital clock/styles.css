@@ -1,0 +1,22 @@
+body {
+  background-color: gray;
+  color: black;
+}
+
+#clock-header {
+  text-align: center;
+  font-size: 50px;
+  font-family: "Faster One", cursive;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.clock {
+  text-align: center;
+  font-family: "Faster One", cursive;
+  font-size: 400%;
+  margin-top: 15%;
+}
+.date {
+  text-align: center;
+  font-family: "Faster One", cursive;
+  font-size: 150%;
+}
