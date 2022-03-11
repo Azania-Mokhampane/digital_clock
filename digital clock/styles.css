@@ -1,22 +1,54 @@
 body {
   background-color: gray;
   color: black;
+  margin: auto;
+  text-align: center;
+}
+.container {
+  border-style: solid;
+  border-radius: 4px;
+  padding: 30px;
+  width: fit-content;
+  align-items: center;
+  margin: auto;
+  display: block;
 }
 
 #clock-header {
   text-align: center;
   font-size: 50px;
-  font-family: "Faster One", cursive;
+
   font-family: "Montserrat Alternates", sans-serif;
 }
 .clock {
   text-align: center;
   font-family: "Faster One", cursive;
   font-size: 400%;
-  margin-top: 15%;
 }
 .date {
   text-align: center;
   font-family: "Faster One", cursive;
   font-size: 150%;
+}
+.developer {
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  padding-top: 15%;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+@media (max-width: 642px) {
+  h3 {
+    font-size: 100%;
+  }
+  .clock {
+    font-size: 200%;
+  }
+  .date {
+    font-size: 100%;
+  }
 }
