@@ -28,8 +28,8 @@ const showCurrentDate = () => {
 
   let currentDate = dayOfTheWeek + " " + day + " " + month + " " + year;
 
-  document.getElementById("DateDisplay").innerText = currentDate;
-  document.getElementById("DateDisplay").textContent = currentDate;
+  document.getElementById("Date-Display").innerText = currentDate;
+  document.getElementById("Date-Display").textContent = currentDate;
 };
 
 showCurrentDate();
